@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Basty's Komponenten Spielwiese</title>
+        <style>
+            spa-counter.special {
+                --height: 150px;
+            }
+            spa-counter.special h1{
+                color:red;
+            }
+        </style>
+        <script src="webcomponents-loader.js"></script>
+        <!-- <script src="@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script> -->
+        <script src="index.js" type="module"></script>
+    </head>
+    <body>
+        Web Components
+        <spa-counter value="1"></spa-counter>
+        <spa-counter value="3" class="special">
+            <h1 slot="header">Value pre- &amp; postfix</h1>
+            <span slot="value-prefix">&gt;</span>
+            <span slot="value-postfix">&euro;</span>
+        </spa-counter>
+        <spa-counter value="1"></spa-counter>
+    </body>
+</html>

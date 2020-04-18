@@ -108,7 +108,6 @@ class MyComponent extends HTMLElement {
             } else if (k === "-") {
                 button = this.decrementButton;
             }
-            debugger;
             if (button && button.classList) {
                 button.classList.add("active");
                 button.dispatchEvent(new Event("click"));
